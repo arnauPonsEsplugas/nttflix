@@ -37,6 +37,10 @@ public class UserService {
 		return userRepository.findAll();
 	}
 
+	public boolean existsById(Long id) {
+		return userRepository.findById(id);
+	}
+
  
 	
 }
