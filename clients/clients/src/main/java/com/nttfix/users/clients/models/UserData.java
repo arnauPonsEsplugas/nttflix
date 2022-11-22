@@ -1,9 +1,14 @@
-package com.nttfix.users.clients;
+package com.nttfix.users.clients.models;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Repository;
 
 @Entity
 @Table
 @Repository
-public class Userdata {
+public class UserData {
     Long id;
 
     String username;
@@ -16,9 +21,9 @@ public class Userdata {
 
     Boolean exprired;
 
-    public Userdata() {}
+    public UserData() {}
 
-    public Userdata(Long id, String username, String password, String email, String account, Boolean exprired) {
+    public UserData(Long id, String username, String password, String email, String account, Boolean exprired) {
         this.id = id;
         this.username = username;
         this.password = password;
